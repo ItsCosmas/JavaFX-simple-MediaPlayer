@@ -30,7 +30,7 @@ public class Extract implements Initializable {
     public void openMediaFile(){
         FileChooser fileChooser = new FileChooser();
 
-        fileChooser.setTitle("Choose Media to Add");
+        fileChooser.setTitle("Select Media To Play");
         fileChooser.getExtensionFilters().addAll(
                 // To filter only specific Video formats
                 // To add more Video formats in future
