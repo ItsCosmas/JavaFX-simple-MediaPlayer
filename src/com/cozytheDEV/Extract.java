@@ -32,8 +32,8 @@ public class Extract implements Initializable {
 
         fileChooser.setTitle("Choose Media to Add");
         fileChooser.getExtensionFilters().addAll(
-                // To filter only specific image formats
-                // To add more image formats
+                // To filter only specific Video formats
+                // To add more Video formats in future
                 new FileChooser.ExtensionFilter("Video Files","*.mp4")
                 //new FileChooser.ExtensionFilter("All Files","*.*")
         );
