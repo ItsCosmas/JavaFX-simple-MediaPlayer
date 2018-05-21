@@ -7,6 +7,8 @@ import javafx.scene.control.Label;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
 
 import java.io.File;
@@ -22,54 +24,65 @@ public class Extract implements Initializable {
     private MediaView mainMediaView;
 
     MediaPlayer mediaPlayer;
+    Stage stage;
+
+    @FXML
+    public void openMediaFile(){
+        FileChooser fileChooser = new FileChooser();
+
+        fileChooser.setTitle("Choose Media to Add");
+        fileChooser.getExtensionFilters().addAll(
+                // To filter only specific image formats
+                // To add more image formats
+                new FileChooser.ExtensionFilter("Video Files","*.mp4")
+                //new FileChooser.ExtensionFilter("All Files","*.*")
+        );
 
 
-   //private String MEDIA_URL = new File("C:\\Users\\user\\Videos\\eminemagain.MP4").getAbsolutePath();
-   //private String MEDIA_URL = new File("D:\\Music Videos\\Rock\\Gorillaz - Melanchony Hill.MP4").getAbsolutePath();
-   //private String MEDIA_URL = new File("D:\\Music Videos\\Rock\\My Chemical Romance -  Welcome To The Black Parade.MP4").getAbsolutePath();
-   //private String MEDIA_URL = new File("C:\\Project Videos\\My Chemical Romance -  Welcome To The Black Parade.MP4").getAbsolutePath();
-   //private String MEDIA_URL = new File("C:\\Project Videos\\Busted - Sleeping With The Light On.MP4").getAbsolutePath();
-   private String MEDIA_URL = new File("C:\\Project Videos\\Avril Lavigne - Sk8er Boi.MP4").getAbsolutePath();
-   //private String MEDIA_URL = new File("C:\\Project Videos\\R.E.M. - Everybody Hurts (Official Music Video).MP4").getAbsolutePath();
-   //private String MEDIA_URL = new File("C:\\Project Videos\\Thirty Seconds To Mars - ATTACK - YouTube_2.MP4").getAbsolutePath();
 
 
-    @Override
-    public void initialize(URL Location, ResourceBundle resources) {
+        File file = fileChooser.showOpenDialog(stage);
+
+        if (file != null){
+            String MEDIA_URL = file.toString();
+            // The regex below only extracts the Tittle part of the media
 
 
+            String [] mediaTitleParts = MEDIA_URL.split(":");
+            String mediaTitleSecondPart = mediaTitleParts [1];
+            //System.out.println(mediaTitleSecondPart);
+            String [] MediaTitlePartsMain = mediaTitleSecondPart.split("\\\\");
+            //Extract the Title part which usually the last String after split
+            String MediaTitle = MediaTitlePartsMain [MediaTitlePartsMain.length - 1];
+            //System.out.println(MediaTitle);
+            lblMediaTitle.setText(MediaTitle);
+
+            //lblMediaTitle.setText(MEDIA_URL);
+
+            Media media = new Media(new File(MEDIA_URL).toURI().toString());
+
+            mediaPlayer = new MediaPlayer(media);
+
+            //mediaPlayer = new MediaPlayer(new Media(this.getClass().getResource(MEDIA_URL).toExternalForm()));
 
 
-        // The regex below only extracts the Tittle part of the media
+            mainMediaView.setMediaPlayer(mediaPlayer);
 
-
-        String [] mediaTitleParts = MEDIA_URL.split(":");
-        String mediaTitleSecondPart = mediaTitleParts [1];
-        //System.out.println(mediaTitleSecondPart);
-        String [] MediaTitlePartsMain = mediaTitleSecondPart.split("\\\\");
-        //Extract the Title part which usually the last String after split
-        String MediaTitle = MediaTitlePartsMain [MediaTitlePartsMain.length - 1];
-        //System.out.println(MediaTitle);
-        lblMediaTitle.setText(MediaTitle);
-
-        //lblMediaTitle.setText(MEDIA_URL);
-
-        Media media = new Media(new File(MEDIA_URL).toURI().toString());
-
-        mediaPlayer = new MediaPlayer(media);
-
-        //mediaPlayer = new MediaPlayer(new Media(this.getClass().getResource(MEDIA_URL).toExternalForm()));
-
-
-        mainMediaView.setMediaPlayer(mediaPlayer);
-
-        //Resize Video
+            //Resize Video
 
        /* DoubleProperty width = mainMediaView.fitWidthProperty();
         DoubleProperty height = mainMediaView.fitHeightProperty();
 
         width.bind(Bindings.selectDouble(mainMediaView.sceneProperty(), "width"));
         height.bind(Bindings.selectDouble(mainMediaView.sceneProperty(), "height"));*/
+        }
+    }
+
+
+
+    @Override
+    public void initialize(URL Location, ResourceBundle resources) {
+
 
     }
 
