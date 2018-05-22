@@ -1,0 +1,4 @@
+Add a side sliding nav style menu
+Add a Seek bar / Scroll bar showing video progress and allow seek
+Add a beautiful volume slider
+Improve on appearance
