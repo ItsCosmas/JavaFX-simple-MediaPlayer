@@ -4,6 +4,7 @@ package com.cozytheDEV;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.control.MenuBar;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
@@ -85,6 +86,10 @@ public class Extract implements Initializable {
 
 
     }
+
+
+    @FXML
+    MenuBar menuBar;
 
 
 
