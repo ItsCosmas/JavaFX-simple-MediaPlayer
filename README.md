@@ -7,4 +7,5 @@ This code also shows how you can extract file name from path directory using Str
 
 Below is a screenshot of the Media player.
 
-![alt text](https://github.com/ItsCosmas/JavaFX-simple-MediaPlayer/src/com/cozytheDEV/Screenshots/homeScreenshot.PNG) <br />
+![alt text](https://github.com/ItsCosmas/JavaFX-simple-MediaPlayer/master/src/com/cozytheDEV/Screenshots/homeScreenshot.PNG) <br />
+![alt text](https://github.com/ItsCosmas/SystemFreeRecords/blob/master/src/SysFreeManager/Screenshots/homeafterlogin.JPG) <br />
