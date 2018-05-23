@@ -1,10 +1,11 @@
-# JavaFX-simple-MediaPlayer
-JavaFX simple MediaPlayer.
+## **JavaFX Media Player**
 
-It has a Simple Method to Extract Media Name from the path directory.
+JavaFX MediaPlayer.
 
-This code also shows how you can extract file name from path directory using String Slicing.
+#####Below are screenshots of the Media player.
 
-Below is a screenshot of the Media player.
 
-![alt text](https://github.com/ItsCosmas/JavaFX-simple-MediaPlayer/blob/master/src/com/cozytheDEV/Screenshots/homeScreenshot.PNG) <br />
+![A Screenshot of the Media Player Home](https://github.com/ItsCosmas/JavaFX-simple-MediaPlayer/blob/master/src/com/cozytheDEV/Screenshots/homeScreenshot.PNG) <br />
+![A Screenshot of the Media Player Home](https://github.com/ItsCosmas/JavaFX-simple-MediaPlayer/blob/master/src/com/cozytheDEV/Screenshots/homescreen.PNG) <br />
+
+It has a Simple Method to Extract Media Name from the path directory shown in the code.

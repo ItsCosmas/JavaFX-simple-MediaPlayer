@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuBar;
+import javafx.scene.control.Slider;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
@@ -23,6 +24,9 @@ public class MediaClass implements Initializable {
 
     @FXML
     private MediaView mainMediaView;
+
+    @FXML
+    Slider theVolumeSlider;
 
     MediaPlayer mediaPlayer;
     Stage stage;
@@ -65,6 +69,11 @@ public class MediaClass implements Initializable {
             mediaPlayer = new MediaPlayer(media);
 
             //mediaPlayer = new MediaPlayer(new Media(this.getClass().getResource(MEDIA_URL).toExternalForm()));
+
+
+            // Volume Slider
+            theVolumeSlider.setValue(mediaPlayer.getVolume() * 100);
+            theVolumeSlider.valueProperty().addListener(observable -> mediaPlayer.setVolume(theVolumeSlider.getValue() / 100));
 
 
             mainMediaView.setMediaPlayer(mediaPlayer);
