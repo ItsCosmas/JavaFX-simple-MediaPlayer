@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/out/production/Extract File Name From Media Path/com/cozytheDEV/ExtractMedia.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Extract File Name From Media Path/com/cozytheDEV/Main.class" afterPath="$PROJECT_DIR$/out/production/Extract File Name From Media Path/com/cozytheDEV/Main.class" />
-      <change beforePath="$PROJECT_DIR$/src/com/cozytheDEV/ExtractMedia.fxml" afterPath="$PROJECT_DIR$/src/com/cozytheDEV/MediaHome.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/com/cozytheDEV/Main.java" afterPath="$PROJECT_DIR$/src/com/cozytheDEV/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/cozytheDEV/MediaClass.java" afterPath="$PROJECT_DIR$/src/com/cozytheDEV/MediaClass.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/cozytheDEV/Screenshots/homescreen.PNG" afterPath="$PROJECT_DIR$/src/com/cozytheDEV/Screenshots/homescreen.PNG" />
+      <change beforePath="$PROJECT_DIR$/src/com/cozytheDEV/Screenshots/homeScreenshot.PNG" afterPath="$PROJECT_DIR$/src/com/cozytheDEV/Screenshots/homeScreenshot.PNG" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,7 +61,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/cozytheDEV/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
@@ -99,20 +93,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="170">
-                <caret line="10" column="87" lean-forward="false" selection-start-line="10" selection-start-column="87" selection-end-line="10" selection-end-column="87" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MediaHome.fxml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MediaHome.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/cozytheDEV/MediaHome.fxml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -415,7 +396,7 @@
       <workItem from="1527012208852" duration="3651000" />
       <workItem from="1527016829718" duration="243000" />
       <workItem from="1527074256203" duration="150000" />
-      <workItem from="1527099640097" duration="2261000" />
+      <workItem from="1527099640097" duration="2595000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed some comments on file chooser">
       <created>1526932497340</created>
@@ -452,11 +433,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527100484407</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Renamed the FXML file&#10;Added a Volume Slider&#10;Started on a slider to allow seek">
+      <created>1527102044944</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1527102044944</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15717000" />
+    <option name="totallyTimeSpent" value="16051000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -472,7 +460,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3219076" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3219076" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -548,7 +536,8 @@
     <MESSAGE value="A List Of Changes to do" />
     <MESSAGE value="Added a Menu Bar on top of the page and removed the old open media button&#10;Added Keyboard Shortcut for Open Media&#10;Optimized Code" />
     <MESSAGE value="Renamed the Extract class to MediaClass" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renamed the Extract class to MediaClass" />
+    <MESSAGE value="Renamed the FXML file&#10;Added a Volume Slider&#10;Started on a slider to allow seek" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed the FXML file&#10;Added a Volume Slider&#10;Started on a slider to allow seek" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -980,15 +969,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cozytheDEV/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/cozytheDEV/MediaHome.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#808#809#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="24" column="112" lean-forward="false" selection-start-line="24" selection-start-column="112" selection-end-line="24" selection-end-column="112" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="170">
+            <caret line="10" column="87" lean-forward="false" selection-start-line="10" selection-start-column="87" selection-end-line="10" selection-end-column="87" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1008,26 +1007,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="170">
-            <caret line="10" column="87" lean-forward="false" selection-start-line="10" selection-start-column="87" selection-end-line="10" selection-end-column="87" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cozytheDEV/MediaHome.fxml">
+    <entry file="file://$PROJECT_DIR$/src/com/cozytheDEV/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="112" lean-forward="false" selection-start-line="24" selection-start-column="112" selection-end-line="24" selection-end-column="112" />
-          <folding />
+        <state relative-caret-position="425">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+          </folding>
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
   </component>
