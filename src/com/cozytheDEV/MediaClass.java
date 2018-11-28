@@ -1,5 +1,10 @@
 package com.cozytheDEV;
 
+/**
+ * BUG ALERT
+ * handle exceptions in case media controls buttons are pressed without yet loaded media
+ * */
+
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -44,22 +49,24 @@ public class MediaClass implements Initializable {
         );
 
 
-
-
         File file = fileChooser.showOpenDialog(stage);
 
         if (file != null){
             String MEDIA_URL = file.toString();
             // The regex below only extracts the Tittle part of the media
 
-
+/*			 On WIndows OS
             String [] mediaTitleParts = MEDIA_URL.split(":");
             String mediaTitleSecondPart = mediaTitleParts [1];
-            //System.out.println(mediaTitleSecondPart);
+            System.out.println(mediaTitleSecondPart);
             String [] MediaTitlePartsMain = mediaTitleSecondPart.split("\\\\");
-            //MediaClass the Title part which usually the last String after split
-            String MediaTitle = MediaTitlePartsMain [MediaTitlePartsMain.length - 1];
-            //System.out.println(MediaTitle);
+            MediaClass the Title part which usually the last String after split
+ */
+
+			// On Linux
+			String [] MediaTitlePartsMain = MEDIA_URL.split("/");
+			//MediaClass the Title part which usually the last String after split
+			String MediaTitle = MediaTitlePartsMain [MediaTitlePartsMain.length - 1];
             lblMediaTitle.setText(MediaTitle);
 
             //lblMediaTitle.setText(MEDIA_URL);
@@ -84,7 +91,7 @@ public class MediaClass implements Initializable {
         DoubleProperty height = mainMediaView.fitHeightProperty();
 
         width.bind(Bindings.selectDouble(mainMediaView.sceneProperty(), "width"));
-        height.bind(Bindings.selectDouble(mainMediaView.sceneProperty(), "height"));*/
+        height.bind(Bindings.selectDouble(mainMediaView.sceneProperty(), "height"));  */
         }
     }
 
@@ -99,8 +106,6 @@ public class MediaClass implements Initializable {
 
     @FXML
     MenuBar menuBar;
-
-
 
     @FXML
     private void play(){
