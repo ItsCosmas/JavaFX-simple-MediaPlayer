@@ -10,3 +10,5 @@
 
 #### It has a Simple Method to Extract Media Name from the path directory shown in the code.
 #### It's pretty basic and only plays MP4 files
+
+#### To Use on Windows uncomment the windows block comment on MainClass.java and block comment the Linux block.
