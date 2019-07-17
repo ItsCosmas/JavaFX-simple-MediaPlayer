@@ -12,16 +12,16 @@
 - To Use on Windows uncomment the windows block comment on MainClass.java and block comment the Linux block.
 ```
 
-/*			 On Windows OS
-            String [] mediaTitleParts = MEDIA_URL.split(":");
-            String mediaTitleSecondPart = mediaTitleParts [1];
-            System.out.println(mediaTitleSecondPart);
-            String [] MediaTitlePartsMain = mediaTitleSecondPart.split("\\\\");
-            MediaClass the Title part which usually the last String after split
+/*	 // On Windows OS
+         String [] mediaTitleParts = MEDIA_URL.split(":");
+         String mediaTitleSecondPart = mediaTitleParts [1];
+         System.out.println(mediaTitleSecondPart);
+         String [] MediaTitlePartsMain = mediaTitleSecondPart.split("\\\\");
+         MediaClass the Title part which usually the last String after split
  */
 
-			// On Linux and Mac
-			String [] MediaTitlePartsMain = MEDIA_URL.split("/");
-			//MediaClass the Title part which usually the last String after split
-			String MediaTitle = MediaTitlePartsMain [MediaTitlePartsMain.length - 1];
+	// On Linux and Mac
+	String [] MediaTitlePartsMain = MEDIA_URL.split("/");
+	//MediaClass the Title part which usually the last String after split
+	String MediaTitle = MediaTitlePartsMain [MediaTitlePartsMain.length - 1];
 ```
